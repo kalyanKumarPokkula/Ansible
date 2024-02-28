@@ -1,0 +1,19 @@
+---
+- name: Example Ansible playbook
+  hosts: all
+  become: true
+  remote_user: ubuntu
+  
+  tasks:
+    - name: Install nginx
+      apt:
+        name: nginx
+        state: present
+    - name: Start nginx
+      service:
+        name: nginx
+        state: started
+    - name: create Directory
+      file:
+        path: ./aws
+        state: directory
