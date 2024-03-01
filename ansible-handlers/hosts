@@ -1,0 +1,2 @@
+[default]
+52.66.206.198 ansible_ssh_private_key_file=/home/akhil/Downloads/AWS_LOGIN.pem
